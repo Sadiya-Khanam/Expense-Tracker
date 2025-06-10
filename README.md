@@ -56,28 +56,9 @@ This project was built to demonstrate proficiency in:
 4.  **Viewing Analytics:**
     * Switch between "Pie Chart" and "Bar Chart" tabs in the "Expense Analytics" section to visualize your spending by category or month.
 
-## Folder Structure
 
-expense-tracker/
-├── public/                 # Public assets (e.g., index.html)
-├── src/
-│   ├── assets/             # Static assets like images (if any)
-│   ├── components/         # Reusable UI components
-│   │   ├── ExpenseBarChart.jsx
-│   │   ├── ExpenseChart.jsx
-│   │   ├── ExpenseForm.jsx
-│   │   ├── ExpenseList.jsx
-│   │   └── ExpensePieChart.jsx
-│   ├── context/            # React Context for global state management
-│   │   └── ExpenseContext.jsx
-│   ├── utils/              # Utility functions (e.g., formatting, data aggregation)
-│   │   └── expenses.js
-│   ├── App.css             # Main styling
-│   ├── App.js              # Main application component
-│   ├── index.css           # Global CSS (Tailwind imports)
-│   └── index.js            # Entry point for React app
-├── .gitignore              # Files/folders ignored by Git
-├── package.json            # Project dependencies and scripts
-└── README.md               # Project documentation
+
+
+
 
 
