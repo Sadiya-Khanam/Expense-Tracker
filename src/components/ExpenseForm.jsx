@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useExpenses } from "../context/ExpenseContext";
 import toast from "react-hot-toast";
 
-const ExpenseForm = () => {
+  const ExpenseForm = () => {
   const { addExpense } = useExpenses();
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
@@ -11,6 +11,7 @@ const ExpenseForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const categoryOptions = [
+     { value: "all", label: "All" },
     { value: "food", label: "Food & Dining" },
     { value: "transport", label: "Transportation" },
     { value: "entertainment", label: "Entertainment" },

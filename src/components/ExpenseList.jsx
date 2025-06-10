@@ -13,6 +13,7 @@ const ExpenseList = () => {
   const [categoryFilter, setCategoryFilter] = useState("all");
 
   const categoryOptions = [
+     { value: "all", label: "All" },
     { value: "food", label: "Food & Dining" },
     { value: "transport", label: "Transportation" },
     { value: "entertainment", label: "Entertainment" },
@@ -23,7 +24,7 @@ const ExpenseList = () => {
   ];
 
   const filteredExpenses = expenses.filter(
-    (expense) => categoryFilter === "all" || expense.category === categoryFilter
+    (expense) => categoryFilter === "all" || expense.category.toLowerCase() === categoryFilter.toLowerCase()
   );
 
   const sortedExpenses = [...filteredExpenses].sort(
